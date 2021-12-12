@@ -1,0 +1,72 @@
+\documentclass[a4paper]{paper}
+
+
+
+\usepackage{listings}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{Nihonnoiro-dark}
+\usepackage{Nihonnoiro-dark-listings}
+
+
+\begin{document}
+
+\title{latex-Nihonnoiro}
+
+\author{\href{https://github.com/wry-run}{wry-run}}
+
+\maketitle
+\begin{abstract}
+	LaTeX dark mode, with a palette of traditional colors of Japan.
+\end{abstract}
+
+%\listoffigures
+%\listoftables
+\tableofcontents
+
+
+
+\section{Citations}
+\label{sec:citations}
+
+References \cite{texbook, latex:companion, latex2e, knuth:1984, lesk:1977} from \href{https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex}{overleaf}.
+
+
+\section{Mathematics}
+\label{sec:mathematics}
+
+Maxwell's equations, in differential form and Gaussian units, from \href{https://en.wikipedia.org/wiki/Maxwell's_equations}{wikipedia.org}.
+
+\begin{align}
+	\nabla \cdot \mathbf {E} &= 4\pi \rho	\\
+	\nabla \cdot \mathbf {B} &= 0	\\
+	\nabla \times \mathbf {E} &= -{\frac {1}{c}}{\frac {\partial \mathbf {B} }{\partial t}}	\\
+	\nabla \times \mathbf {B} &= \frac {1}{c}\left(4\pi \mathbf {J} +\frac {\partial \mathbf {E} }{\partial t}\right)
+\end{align}
+
+\section{Code listing}
+\label{sec:listing}
+
+Python code listing example in \href{file:Fibonacci.py}{Fibonacci.py} from \href{https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming}{docs.python.org}.
+
+\lstinputlisting[language=Python, caption=Python example 1]{Fibonacci.py}
+
+Python code listing example in \href{file:incmatrix.py}{incmatrix.py} from \href{https://www.overleaf.com/learn/latex/Code_listing}{overleaf.com}.
+
+\lstinputlisting[language=Python, caption=Python example 1]{incmatrix.py}
+
+Octave listing example in \href{file:BitXorMatrix.m}{BitXorMatrix.m} from \href{https://www.overleaf.com/learn/latex/Code_listing}{overleaf.com}.
+
+\lstinputlisting[language=Octave, caption=Octave sample code]{BitXorMatrix.m}
+
+%\section*{Acknowledgments}
+
+
+%\printbibliography
+\bibliographystyle{apalike}
+\bibliography{overleaf}
+
+
+\end{document}
+
+
+

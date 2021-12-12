@@ -1,0 +1,30 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{Nihonnoiro-dark-listings}[2021/11/17 Nihonnoiro-dark Theme Listings]
+\RequirePackage{xcolor}
+\RequirePackage{listings}
+
+\usepackage{Nihonnoiro-dark}
+
+\lstset{
+    % How/what to match
+    sensitive=true,
+    % Border (above and below)
+    frame=lines,
+    % Extra margin on line (align with paragraph)
+    xleftmargin=\parindent,
+    % Put extra space under caption
+    belowcaptionskip=1\baselineskip,
+    % Colors
+    backgroundcolor=\color{Ivory Black},
+    basicstyle=\color{Silver Pink}\ttfamily,
+    keywordstyle=\color{Lilac},
+    commentstyle=\color{Lead Gray},
+    stringstyle=\color{Opal Green},
+    numberstyle=\color{Lapis Lazuli},
+    identifierstyle=\color{Chalk},
+    % Break long lines into multiple lines?
+    breaklines=true,
+    % Show a character for spaces?
+    showstringspaces=false,
+    tabsize=2
+}

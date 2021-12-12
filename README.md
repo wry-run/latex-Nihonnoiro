@@ -31,7 +31,7 @@ $ ln -s $PATH_TO_CLONE/colors/*sty $TEXMFHOME/tex/latex/
 
 From the [examples/](examples) folder:
 
-![Dark example](images/example-dark.png)
+![Dark example](example/example-dark.png)
 
 ## License
 
@@ -43,7 +43,7 @@ This package owes to [latex-solarized][latex-solarized] and [dracula/latex][drac
 
 The .gitignore is from [github/gitignore][github/gitignore].
 
-## References
+
 
 [hyperref]: https://ctan.org/pkg/hyperref
 [listings]: https://ctan.org/pkg/listings

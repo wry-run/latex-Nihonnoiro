@@ -15,12 +15,12 @@ To make this package available to all projects, add the `.sty` files to your `$T
 The following example works in ubuntu 20.04; it assumes you have `kpsewhich` available e.g. by having installed the `texlive` package, and that you wish to clone this repository to the folder defined below as `PATH_TO_CLONE`. Modify this variable according to your needs.
 
 ```bash
-$ PATH_TO_CLONE=~/Documents/tex/latex-Nihonnoiro/
-$ git clone https://github.com/wry-run/latex-Nihonnoiro.git $PATH_TO_CLONE
-$ TEXMFHOME=$(kpsewhich -var-value=TEXMFHOME)
-$ mkdir -p $TEXMFHOME/tex/latex/
-$ ln -s $PATH_TO_CLONE/*sty $TEXMFHOME/tex/latex/
-$ ln -s $PATH_TO_CLONE/colors/*sty $TEXMFHOME/tex/latex/
+PATH_TO_CLONE=~/Documents/tex/latex-Nihonnoiro/
+git clone https://github.com/wry-run/latex-Nihonnoiro.git $PATH_TO_CLONE
+TEXMFHOME=$(kpsewhich -var-value=TEXMFHOME)
+mkdir -p $TEXMFHOME/tex/latex/
+ln -s $PATH_TO_CLONE/*sty $TEXMFHOME/tex/latex/
+ln -s $PATH_TO_CLONE/colors/*sty $TEXMFHOME/tex/latex/
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ $ ln -s $PATH_TO_CLONE/colors/*sty $TEXMFHOME/tex/latex/
 
 ## Example
 
-From the [examples/](examples) folder:
+From the [example/](example) folder:
 
 ![Dark example](example/example-dark.png)
 
